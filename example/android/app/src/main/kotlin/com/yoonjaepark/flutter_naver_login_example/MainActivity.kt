@@ -1,4 +1,4 @@
-package com.yoonjaepark.flutter_naver_login_example
+package com.shwjdqls.flutter_naver_login_plus_example
 
 import android.os.Build
 import io.flutter.Log

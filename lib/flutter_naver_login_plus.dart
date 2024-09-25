@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'src/clock.dart';
 
-class FlutterNaverLogin {
-  static const MethodChannel _channel = const MethodChannel('flutter_naver_login');
+class FlutterNaverLoginPlus {
+  static const MethodChannel _channel = const MethodChannel('flutter_naver_login_plus');
 
   static Future<bool?> initSdk({
     required String clientId,

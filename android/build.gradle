@@ -1,4 +1,4 @@
-group 'com.yoonjaepark.flutter_naver_login'
+group 'com.shwjdqls.flutter_naver_login_plus'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -25,9 +25,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace = "com.yoonjaepark.flutter_naver_login"
+    namespace = "com.shwjdqls.flutter_naver_login_plus"
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.yoonjaepark.flutter_naver_login'
+        namespace 'com.shwjdqls.flutter_naver_login_plus'
     }
 
     compileSdk 34

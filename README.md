@@ -10,7 +10,7 @@ To use this plugin, add `flutter_naver_login_plus` as a dependency in your `pubs
 
 ```yaml
 dependencies:
-  flutter_naver_login_plus: ^1.0.0  # Replace with the correct version
+  flutter_naver_login_plus: ^latest_version  # Replace with the correct version
 ```
 
 See the [https://pub.dev/packages/flutter_naver_login](https://pub.dev/packages/flutter_naver_login) for the details.

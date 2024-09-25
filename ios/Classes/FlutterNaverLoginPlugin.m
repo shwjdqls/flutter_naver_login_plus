@@ -35,7 +35,7 @@
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
 
     FlutterMethodChannel* channel = [FlutterMethodChannel
-                                     methodChannelWithName:@"flutter_naver_login"
+                                     methodChannelWithName:@"flutter_naver_login_plus"
                                      binaryMessenger:[registrar messenger]];
     FlutterNaverLoginPlugin* instance = [[FlutterNaverLoginPlugin alloc] init];
     [registrar addMethodCallDelegate:instance channel:channel];

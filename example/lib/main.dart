@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter_naver_login/flutter_naver_login.dart';
+import 'package:flutter_naver_login_plus/flutter_naver_login_plus.dart';
 
 final GlobalKey<ScaffoldMessengerState> snackbarKey =
     GlobalKey<ScaffoldMessengerState>();
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> buttonLoginPressed() async {
     try {
-      final NaverLoginResult res = await FlutterNaverLogin.logIn();
+      final NaverLoginResult res = await FlutterNaverLoginPlus.logIn();
       setState(() {
         name = res.account.nickname;
         isLogin = true;
@@ -118,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> buttonTokenPressed() async {
     try {
-      final NaverAccessToken res = await FlutterNaverLogin.currentAccessToken;
+      final NaverAccessToken res = await FlutterNaverLoginPlus.currentAccessToken;
       setState(() {
         refreshToken = res.refreshToken;
         accesToken = res.accessToken;
@@ -131,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> buttonLogoutPressed() async {
     try {
-      await FlutterNaverLogin.logOut();
+      await FlutterNaverLoginPlus.logOut();
       setState(() {
         isLogin = false;
         accesToken = null;
@@ -145,7 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> buttonLogoutAndDeleteTokenPressed() async {
     try {
-      await FlutterNaverLogin.logOutAndDeleteToken();
+      await FlutterNaverLoginPlus.logOutAndDeleteToken();
       setState(() {
         isLogin = false;
         accesToken = null;
@@ -159,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> buttonGetUserPressed() async {
     try {
-      final NaverAccountResult res = await FlutterNaverLogin.currentAccount();
+      final NaverAccountResult res = await FlutterNaverLoginPlus.currentAccount();
       setState(() => name = res.name);
     } catch (error) {
       _showSnackError(error.toString());

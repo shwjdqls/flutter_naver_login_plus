@@ -1,5 +1,5 @@
-name: flutter_naver_login_example
-description: Demonstrates how to use the flutter_naver_login plugin.
+name: flutter_naver_login_plus_example
+description: Demonstrates how to use the flutter_naver_login_plus plugin.
 publish_to: 'none'
 
 environment:
@@ -9,7 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_naver_login:
+  flutter_naver_login_plus:
     path: ../
 
   # The following adds the Cupertino Icons font to your application.
